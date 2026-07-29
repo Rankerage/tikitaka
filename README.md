@@ -1,8 +1,8 @@
-# TokTok — AI가 먼저 톡톡
+# TikiTaka — AI가 먼저 톡톡
 
 > **"AI talks first. You just tap ○ or ✕."**
 
-TokTok is the world's first **NoStressAI** companion.  
+TikiTaka is the world's first **NoStressAI** companion.  
 No commands. No setup. No learning curve.  
 
 AI starts every conversation with a card.  
@@ -10,7 +10,7 @@ You respond with one tap.
 
 ---
 
-## 🎯 What TokTok Is
+## 🎯 What TikiTaka Is
 
 | ✅ Does | ❌ Does NOT |
 |--------|-----------|
