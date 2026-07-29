@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TikiTaka — NoStressAI</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0A0A0A;color:#fff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:hidden}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem;position:relative}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at center,rgba(212,165,116,0.08) 0%,transparent 70%);pointer-events:none}
+h1{font-size:clamp(3rem,8vw,7rem);font-weight:900;background:linear-gradient(135deg,#D4A574,#FFD700);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.5rem}
+.tagline{font-size:clamp(1.2rem,3vw,1.8rem);color:#888;margin-bottom:3rem}
+.tagline span{color:#D4A574}
+.cards{display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;margin:2rem 0}
+.card{width:260px;padding:2rem;background:#141414;border-radius:20px;border:1px solid rgba(255,255,255,0.08);transition:.3s}
+.card:hover{transform:translateY(-4px);border-color:rgba(212,165,116,0.3);box-shadow:0 8px 40px rgba(212,165,116,0.1)}
+.card .icon{font-size:2.5rem;margin-bottom:1rem}
+.card h3{color:#D4A574;margin-bottom:.5rem;font-size:1.1rem}
+.card p{color:#666;font-size:.9rem;line-height:1.6}
+.ox{display:flex;gap:1rem;justify-content:center;margin:2rem 0}
+.ox .btn{width:64px;height:64px;border-radius:50%;border:2px solid #555;background:transparent;color:#555;font-size:1.8rem;cursor:pointer;transition:.3s;display:flex;align-items:center;justify-content:center}
+.ox .btn.o{border-color:#D4A574;color:#D4A574;font-size:2.2rem}
+.cta{background:linear-gradient(135deg,#D4A574,#C4954C);color:#0A0A0A;border:none;padding:1rem 3rem;border-radius:14px;font-size:1.2rem;font-weight:700;cursor:pointer;margin-top:1rem;transition:.3s}
+.cta:hover{transform:scale(1.05)}
+.section{padding:6rem 2rem;max-width:1000px;margin:0 auto}
+.section h2{font-size:2.5rem;color:#D4A574;margin-bottom:2rem;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+.feature{background:#141414;border-radius:20px;padding:2rem;border:1px solid rgba(255,255,255,0.06)}
+.feature h3{color:#fff;margin-bottom:.5rem}
+.feature p{color:#666;line-height:1.6}
+.demo{background:#141414;border-radius:24px;padding:2rem;max-width:400px;margin:2rem auto;border:1px solid rgba(255,255,255,0.08)}
+.demo .q{color:#fff;text-align:center;margin-bottom:1rem;font-size:1.1rem}
+.demo .btns{display:flex;gap:1rem;justify-content:center}
+.demo .btns div{width:54px;height:54px;border-radius:50%;border:2px solid #D4A574;color:#D4A574;display:flex;align-items:center;justify-content:center;font-size:1.4rem;cursor:pointer}
+footer{text-align:center;padding:3rem;color:#333;font-size:.9rem}
+footer a{color:#D4A574;text-decoration:none}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <h1>TikiTaka</h1>
+  <p class="tagline">AI가 먼저 <span>톡</span>. 당신은 그냥 <span>탭</span>.</p>
+
+  <div class="demo">
+    <p class="q">이 소리, 들리세요?</p>
+    <div class="btns"><div>✕</div><div>○</div></div>
+  </div>
+
+  <p style="color:#555;margin-top:1rem;font-size:.9rem">No commands. No stress. Just cards.</p>
+  <a href="https://github.com/Rankerage/oracle_prompter" style="text-decoration:none"><button class="cta">GitHub에서 보기</button></a>
+</section>
+
+<section class="section">
+  <h2>왜 TikiTaka인가</h2>
+  <div class="grid">
+    <div class="feature"><h3>AI가 먼저 말을 겁니다</h3><p>당신이 질문하지 않아도 됩니다. AI가 먼저 카드를 건네며 대화를 시작합니다.</p></div>
+    <div class="feature"><h3>그냥 ○ 아니면 ✕</h3><p>텍스트 입력도, 명령어도, 설정도 없습니다. 두 개의 버튼만 누르면 끝입니다.</p></div>
+    <div class="feature"><h3>쓸수록 나를 닮아갑니다</h3><p>FSRS 알고리즘이 당신의 학습 패턴을 기억하고, 한 달이면 완벽해집니다.</p></div>
+    <div class="feature"><h3>완전 무료</h3><p>API 키도, 구독도, 결제도 없습니다. 설치하고 바로 시작하세요.</p></div>
+    <div class="feature"><h3>모든 과목을 OX로</h3><p>영어, IT 용어, 신조어, 수학 — 모든 학습이 카드 한 장으로 이루어집니다.</p></div>
+    <div class="feature"><h3>오픈소스</h3><p>MIT 라이선스. 누구나 코드를 보고, 기여하고, 개선할 수 있습니다.</p></div>
+  </div>
+</section>
+
+<section class="section" style="text-align:center">
+  <h2>이보다 더 쉬울 수 없습니다</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="icon">🃏</div>
+      <h3>카드 대화</h3>
+      <p>AI가 카드로 질문하고, 당신은 ○✕로 답합니다. 티키타카처럼 짧고 빠르게.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🧠</div>
+      <h3>FSRS 학습</h3>
+      <p>Anki의 차세대 알고리즘. 21개 파라미터를 AI가 당신에게 맞춰 조율합니다.</p>
+    </div>
+    <div class="card">
+      <div class="icon">📁</div>
+      <h3>마크다운 Vault</h3>
+      <p>모든 데이터가 .md 파일로 저장됩니다. 당신의 두 번째 뇌.</p>
+    </div>
+  </div>
+  <a href="https://github.com/Rankerage/oracle_prompter" style="text-decoration:none"><button class="cta" style="margin-top:3rem">지금 GitHub에서 만나보세요</button></a>
+</section>
+
+<footer>
+  <p>TikiTaka — NoStressAI · <a href="https://github.com/Rankerage/oracle_prompter">GitHub</a> · MIT License</p>
+  <p style="margin-top:.5rem">Inspired by <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent</a> by Nous Research</p>
+</footer>
+
+</body>
+</html>
