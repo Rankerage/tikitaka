@@ -23,7 +23,7 @@
 
 | 방법 | 링크 |
 |------|------|
-| 📦 **APK 다운로드** | [app-debug.apk](https://github.com/Rankerage/oracle_prompter/releases) ← 곧 출시 |
+| 📦 **APK 다운로드** | [v0.1.0 Alpha](https://github.com/Rankerage/oracle_prompter/releases/tag/v0.1.0) 🆕 |
 | 🛠️ 직접 빌드 | `flutter build apk --debug` |
 
 ---
